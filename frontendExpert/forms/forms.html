@@ -9,35 +9,37 @@
 <body>
     <form>
         <label for="username">Username</label>
-        <input
-          id="username"
-          type="text"
-          placeholder="user123"
-          name="username"
-          required />
-      
+        <input 
+            id="username" 
+            type="text" 
+            placeholder="user123" 
+            name="username"
+            required>
+
         <label for="password">Password</label>
-        <input
-          id="password"
-          type="password"
-          name="password"
-          minlength="6"
-          required />
-      
+        <input 
+            id="password" 
+            type="password" 
+            placeholder="password" 
+            name="password"
+            minlength="6"
+            required>
+        <input type="date">  
+        <input type="checkbox"> 
+
         <fieldset>
-          <legend>Choose your animal</legend>
-      
-          <label for="dog">Dog</label>
-          <input id="dog" type="radio" name="animal" value="dog" />
-      
-          <label for="cat">Cat</label>
-          <input id="cat" type="radio" name="animal" value="cat" />
-      
-          <label for="horse">Horse</label>
-          <input id="horse" type="radio" name="animal" value="horse" />
+            <legend>Choose your animal</legend>
+            <label for="dog">Dog</label>
+            <input id="dog" type="radio" name="animal" value="dog">
+    
+            <label for="cat">Cat</label>
+            <input id="cat" type="radio" name="animal" value="cat">
+    
+            <label for="bird">Bird</label>
+            <input id="bird" type="radio" name="animal" value="bird">
         </fieldset>
-      
+
         <button>Submit</button>
-      </form>
+    </form> 
 </body>
 </html>
