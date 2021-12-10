@@ -1,0 +1,61 @@
+/* pseudo elements*/
+
+p::first-letter {
+  font-size: 2em;
+}
+
+p::before {
+  content: ">";
+}
+
+P::after {
+  content: "~";
+}
+
+/* p::first-line {
+  font-size: 2em;
+} */
+
+
+/* pseudo classes use a colon : then the name of the class */
+/* p:first-of-type {
+  color: orange;
+} */
+
+/* p:first-child {
+  color: purple;
+} */
+
+/* p:last-child {
+  color: purple;
+} */
+
+/* p:last-of-type {
+  color: orange;
+} */
+
+/* p:nth-of-type(1) {
+  color: orange;
+} */
+
+/* p:nth-of-type(2n-1) {
+  color: orange;
+} */
+
+input:focus {
+  outline: 2px solid blue;
+}
+
+input:invalid:not(:focus) {
+  outline: 2px solid red;
+}
+
+a:link {
+  color:red;
+}
+
+a:visited {
+  color:green;
+}
+
+
