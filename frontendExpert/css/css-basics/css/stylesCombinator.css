@@ -1,0 +1,25 @@
+
+
+/* descendant combinator*/
+
+/* footer p {
+  color: red;
+} */
+
+/* child combinator */
+
+/* footer > p {
+  color: red;
+} */
+
+/* sibling combinator get ANY PARAPGRAPH THAT IS A SLIBLING OF H2 */
+
+h2 ~ p {
+  color: red;
+}
+
+/* adjacent sibling combinator */
+
+/* h2 + a {
+  color: red;
+} */

@@ -1,4 +1,39 @@
-h1  {
+
+
+/* type selector */
+
+h1 {
+  color: darkblue;
+}
+
+
+/* ID selector */
+
+#red {
+  color: red;
+}
+
+/* class selector */
+
+.green {
+  color: green;
+}
+
+/* attribute selector */
+
+a[href^="https://algoexpert.io"] {
+  color: tomato;
+  text-decoration: none;
+}
+
+/* combinators*/
+
+
+
+
+
+/* type selectors */
+/* h1  {
 text-align: center;
 color: darkblue;
 font-weight: normal;
@@ -11,4 +46,4 @@ p {
   min-height: 100px;
   font-size: 1.25rem;
   width: 30%;
-}
+} */
