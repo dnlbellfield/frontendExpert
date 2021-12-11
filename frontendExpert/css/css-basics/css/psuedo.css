@@ -1,15 +1,32 @@
+/* pseudo class*/
+
+/* input:focus {
+  outline: 2px solid blue;
+}
+ */
+
+
 /* pseudo elements*/
 
-p::first-letter {
+
+/* Add a heart before links */
+a::before {
+  content: "♥";
+}
+
+
+h1::first-letter {
   font-size: 2em;
 }
 
+
+
 p::before {
-  content: ">";
+  content: "♥";
 }
 
-P::after {
-  content: "~";
+h1::after {
+  content: "♥";
 }
 
 /* p::first-line {

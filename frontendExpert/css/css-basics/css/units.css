@@ -1,0 +1,38 @@
+html {
+  font-size: 24px;
+}
+
+p {
+  width: 60ch;
+}
+
+#parent {
+  font-size: 1.5em;
+  width: 50%;
+  border: 2px solid black;
+}
+
+#red {
+  font-size: 1em;
+  width: 50%;
+  background-color: red;
+}
+
+#blue {
+  font-size: 1 rem;
+  width: 50vw;
+  /* background-color: #4B7DAF; */
+  background-color: rgba(75, 125, 175, .5);
+  /* background-color: hsla(210, 40%, 49%, .5); */
+}
+
+#green {
+  font-size:16px;
+  width: 10rem;
+  background-color: green;
+}
+
+div {
+  margin: 10px;
+  color: white;
+}
