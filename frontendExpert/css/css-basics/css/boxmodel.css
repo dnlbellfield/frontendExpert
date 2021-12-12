@@ -1,0 +1,21 @@
+p {
+  margin: 24px;
+  padding: 10px;
+  border: 2px solid black;
+  background-color: lightblue;
+}
+
+em {
+  margin: 24px;
+}
+
+p:hover {
+  background-color:rgb(153, 19, 19);
+}
+
+label {
+  display: block;
+}
+button {
+  display: block;
+}
