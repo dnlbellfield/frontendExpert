@@ -1,0 +1,36 @@
+
+body {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-areas: 
+  "header header"
+  "main aside"
+  "footer footer";
+  /* gap: 4px; */
+  /* place-items: center; */
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  display: flex;
+  grid-area: main;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer {
+  grid-area: footer;
+}
+
+ body > * {
+   border: 5px solid lightblue;
+ }

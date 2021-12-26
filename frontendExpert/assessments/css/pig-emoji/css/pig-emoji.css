@@ -1,0 +1,95 @@
+:root {
+  --head-size: 200px;
+  --main-color: #ffc0cb;
+  --nose-color: #f57187;
+  --thick-border: 5px solid black;
+  --thin-border: 2px solid black;
+  --border-radius: 50%;
+}
+
+.head {
+  position: relative;
+  width: var(--head-size);
+  height: var(--head-size);
+  background-color: var(--main-color);
+  border-radius: var(--border-radius);
+  border:var(--thick-border);
+  margin-top: 20px;
+}
+
+.ear {
+  z-index: -1;
+  position: absolute;
+  --ear-size: 50px;
+  width: var(--ear-size);
+  height: var(--ear-size);
+  border-radius: var(--border-radius);
+  background-color: var(--main-color);
+  border: var(--thick-border);
+  top: -10px;
+}
+
+.ear:first-child {
+  left: 10px;
+}
+
+.ear:nth-child(2){
+  right: 10px;
+}
+
+.eye {
+
+  --eye-size: 50px;
+  --eye-horizontal-offset: 30px;
+
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--eye-size);
+  height: var(--eye-size);
+  background-color: white;
+  top: 40px;
+  border-radius: var(--border-radius);
+  border: var(--thin-border)
+}
+
+.eye:first-child {
+  left: var(--eye-horizontal-offset);
+}
+
+.eye:nth-child(2) {
+  right: var(--eye-horizontal-offset);
+}
+
+.pupil {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: black;
+  border-radius: var(--border-radius);
+}
+
+
+.nose {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  width: 100px;
+  height: 60px;
+  background-color: var(--nose-color);
+  border: var(--thin-border);
+  border-radius: 35%;
+  margin: auto;
+}
+
+.nostril {
+  width: 25%;
+  height: 50%;
+  border-radius: var(--border-radius);
+  background-color: black;
+}
