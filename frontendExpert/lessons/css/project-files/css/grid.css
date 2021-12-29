@@ -1,3 +1,8 @@
+/* light blue border on all the direct children of the body, 
+   which are the grid items*/
+   body > * {
+    border: 5px solid lightblue;
+  }
 
 body {
   display: grid;
@@ -7,8 +12,34 @@ body {
   "header header"
   "main aside"
   "footer footer";
-  /* gap: 4px; */
-  /* place-items: center; */
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer {
+  grid-area: footer;
+}
+
+
+/* 
+body {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-areas: 
+  "header header"
+  "main aside"
+  "footer footer";
 }
 
 header {
@@ -33,4 +64,4 @@ footer {
 
  body > * {
    border: 5px solid lightblue;
- }
+ } */
