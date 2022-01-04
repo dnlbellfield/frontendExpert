@@ -1,0 +1,52 @@
+
+#wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  gap: 24px 10px;
+}
+
+#algo-expert {
+  flex-basis: 75%;
+  margin: auto; 
+  order: 3;
+  background-color: #626ee3;
+}
+
+#systems-expert {
+  align-self: center;
+  flex-basis: 50%;
+  order: 1;
+  background-color: #890023;
+}
+
+#ml-expert {
+  height: 75px;
+  flex-basis: 30%;
+  order: 2;
+  background-color: #f37f1b;
+}
+
+#frontend-expert {
+  flex-basis: 40%;
+  align-self: flex-end;
+  order: 4;
+  background-color: #11967e;
+}
+
+#programming-expert {
+  height: 75px;
+  flex-grow: 1;
+  order: 5;
+  background-color: #f21b3f;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  color: white;
+  font-weight: bold;
+}
