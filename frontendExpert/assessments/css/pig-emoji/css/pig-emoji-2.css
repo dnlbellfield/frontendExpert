@@ -1,0 +1,88 @@
+:root {
+  --background-color: #ffc0cb;
+  --head-size: 200px;
+  --nose-color: #f57187;
+  --thick-border: 5px solid black;
+  --thin-border: 2px solid black;
+  --border-radius: 50%;
+}
+
+.head {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  border: var(--thick-border);
+  margin-top: 20px;
+}
+
+.ear {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  z-index: -1;
+  background-color: var(--background-color);
+  border-radius: 50%;
+  top: -10px;
+  border: var(--thick-border);
+}
+
+.ear:first-child {
+  left: 10px;
+}
+
+.ear:last-child {
+  right: 10px;
+}
+
+.eye {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 40px;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  border: var(--thin-border);
+}
+
+.eye:first-child {
+  left: 30px;  
+}
+
+.eye:last-child {
+  right: 30px;  
+}
+
+.pupil {
+  width: 50%;
+  height: 50%;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.nose {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  width: 100px;
+  height: 60px;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  background-color: var(--nose-color);
+  border-radius: 35%;
+  border: var(--thin-border);
+  margin: auto;
+}
+
+.nostril {
+  height: 50%;
+  width: 25%;
+  background-color: black;
+  border-radius: 50%;
+}

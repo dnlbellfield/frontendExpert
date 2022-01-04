@@ -38,9 +38,9 @@
 }
 
 ol {
+  counter-reset: list-items;
   display: flex;
   padding: 0;
-  counter-reset: list-items;
 }
 
 li {
@@ -49,41 +49,42 @@ li {
 
 ol li {
   position: relative;
-  text-align: center;
   flex-basis: 100%;
+  text-align: center;
 }
 
 ol li::before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   counter-increment: list-items;
   content: counter(list-items);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: var(--circle-width);
-  height: var(--circle-width);
+  height:var(--circle-width);
+
   border-radius: 50%;
-  border: var(--circle-border-width) solid black;
   margin: 0 auto var(--circle-bottom-margin) auto;
   background-color: white;
   font-size: var(--circle-font-size);
-}
-
-.selected:before {
-  color: white;
-  background-color: var(--selected-background-color);
+  border: var(--circle-border-width) solid black;
 }
 
 ol li:not(:first-of-type)::after {
+  position: absolute;
   content: "";
   display: block;
   width: calc(100% - var(--circle-width));
   height: var(--divider-line-height);
   background-color: black;
-  position: absolute;
   left: calc(-50% + var(--circle-radius));
-  top: calc(var(--circle-radius) +
-       var(--circle-border-width) - 
-       var(--divider-line-height) / 2);
+  top:calc(var(--circle-radius) +
+    var(--circle-border-width) - 
+    var(--divider-line-height) / 2);
+}
+
+.selected::before {
+  background-color: var(--selected-background-color);
+  color: white;
 }
 
 ul {
@@ -93,36 +94,36 @@ ul {
 ul li {
   display: flex;
   align-items: center;
-  height: var(--product-offering-height);
-  padding: var(--product-offering-padding);
-  border-radius: var(--product-offering-border-radius);
-  margin: var(--product-offering-vertical-margin) 0;
-  background-color: white;
   font-weight: bold;
+  padding: var(--product-offering-padding);
+  height: var(--product-offering-height);
+  margin: var(--product-offering-vertical-margin) 0;
+  border-radius: var(--product-offering-border-radius);
+  background-color: white;
 }
 
 .blue-product {
-  border-left: var(--product-offering-left-border-size) solid var(--blue-product-color);
-  color: var(--blue-product-color);
+  border-left: 5px solid var(--blue-product-color);
+  color: var(--blue-product-color); 
 }
 
 .red-product {
-  border-left: var(--product-offering-left-border-size) solid var(--red-product-color);
-  color: var(--red-product-color);
+  border-left: 5px solid var(--red-product-color);
+  color: var(--red-product-color); 
 }
 
 .orange-product {
-  border-left: var(--product-offering-left-border-size) solid var(--orange-product-color);
-  color: var(--orange-product-color);
+  border-left: 5px solid var(--orange-product-color);
+  color: var(--orange-product-color); 
 }
 
 .green-product {
-  border-left: var(--product-offering-left-border-size) solid var(--green-product-color);
-  color: var(--green-product-color);
+  border-left: 5px solid var(--green-product-color);
+  color: var(--green-product-color); 
 }
 
 label {
-  margin-left: var(--label-left-margin);
+  padding-left: var(--label-left-margin);
 }
 
 button {
@@ -134,4 +135,3 @@ button {
   background-color: var(--button-background-color);
   color: white;
 }
-

@@ -1,0 +1,39 @@
+ol {
+  padding: 0;
+  counter-reset: test;
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+ol li {
+  flex-basis: 100%;
+  text-align: center;
+  position: relative;
+}
+
+ol li::before {
+  display: flex;
+  counter-increment: test;
+  content: counter(test);
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 4px solid black;
+  margin: auto;
+}
+
+li:not(:first-of-type)::after {
+  content: "";
+  display: block;
+  width: calc(100% - 30px);
+  height: 4px;
+  background-color: black;
+  position: absolute;
+  left: calc(-50% + 15px);
+  top: calc(15px + 4px - 2px);
+}
