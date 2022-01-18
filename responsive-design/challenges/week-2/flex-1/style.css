@@ -1,0 +1,104 @@
+:root {
+  --hero-color: #23424a;
+  --row-heading-color: #87629a;
+  --row1-background-color: #136c72;
+  --btn-color: #38cfd9;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  /* font-weight: 400; */
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 0;
+  /* font-weight: 900; */
+}
+
+.hero {
+  background: #23424a;
+  color: white;
+  padding: 7rem 0;
+}
+
+.hero__img {
+  width: 30%;
+  align-self: flex-start;
+  /* border: 2px solid red; */
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1200px;
+  /* border: 3px solid yellow; */
+}
+.hero__text {
+  width: 60%;
+  margin-right: 5%;
+  /* border: 2px solid red; */
+}
+
+.hero__text p {
+  margin-bottom: 3em;
+  font-weight: 100;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--btn-color);
+
+  color: #23424a;
+  border-radius: 100px;
+
+  padding: 0.5em 2em;
+
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col {
+  width: 100%;
+}
+
+.col + .col {
+  margin-left: 30px;
+}
+
+.three-col {
+  width: 100%;
+  padding: 3em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.three-col h2 {
+  color: var(--row-heading-color);
+}
+
+.two-col {
+  text-align: center;
+  width: 100%;
+  background: var(--row1-background-color);
+  color: white;
+  margin: 0 auto;
+  padding: 3em;
+}

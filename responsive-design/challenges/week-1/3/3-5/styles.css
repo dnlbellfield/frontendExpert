@@ -1,0 +1,50 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  /* font-weight: 400; */
+}
+
+h1 {
+  font-size: 3rem;
+    /* font-weight: 900; */
+}
+
+.hero {
+  background: #23424a;
+  color: white;
+  padding: 100px 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1200px;
+  /* border: 3px solid yellow; */
+}
+.hero__text {
+  width: 55%;
+  /* border: 2px solid red; */
+}
+
+.hero__text p {
+  margin-bottom: 3em;
+  font-weight: 100;
+}
+
+.btn {
+  display: inline-block;
+  background: #38cfd9;
+  
+  color: #23424a;
+  border-radius: 100px;
+
+  padding: .5em 2em;
+
+  text-decoration: none;
+  text-transform: uppercase;
+}
