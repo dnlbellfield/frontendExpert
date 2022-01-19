@@ -4,12 +4,8 @@
 - All text is in the text.md file
 
 // Requirements
-1. Refer to the design specs for the
-   overall layout 
-2. The image should line up with
-   the sidebar in the section
-   below
-
+   1. Get all the navigation items next to one another
+   2. Add a space between all the items
 */
 
 *,
@@ -36,6 +32,7 @@ h1 {
 .section-title {
   color: #87629a;
 }
+
 .btn {
   display: inline-block;
   text-decoration: none;
@@ -59,12 +56,8 @@ h1 {
 }
 
 .row {
-  /* display: flex => flex container */
   display: flex;
   justify-content: space-between;
-
-  /* can't use yet */
-  /* gap: 100px; */
 }
 
 .col {
@@ -74,6 +67,67 @@ h1 {
 
 .col + .col {
   margin-left: 30px;
+}
+
+header {
+  background: #136c72;
+  padding: 0.5em 0;
+}
+
+.logo {
+  /* display: flex; */
+  /* border: 2px solid green; */
+  margin-right: 1em;
+  padding-top: 0.5rem;
+}
+
+.nav__list {
+  /* border: 3px solid red; */
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__list--primary {
+  margin: 0 auto;
+}
+
+.nav__list--secondary {
+}
+
+.nav {
+  /* border: 2px solid yellow; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.nav__item + .nav__item {
+  margin-left: 1em;
+}
+
+.nav__item--push-right {
+  margin-left: auto;
+}
+
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav__link--button {
+  background: #fff;
+  color: #136c72;
+  padding: 0.25em 1em;
+  border-radius: 10em;
+}
+
+.nav__link:hover {
+  opacity: 0.75;
 }
 
 .hero {
@@ -96,18 +150,16 @@ h1 {
 }
 
 .main {
-  /* padding-top: 3em; */
   margin-top: 3em;
 }
 
 .primary-content {
   width: 62%;
-  text-align: center;
 }
 
 .sidebar {
-  padding: 1em;
   width: 32%;
+  padding: 1em;
   text-align: center;
   color: #fff;
   background-color: #136c72;
