@@ -1,0 +1,66 @@
+/*
+
+1 | Roboto Light font-size: 18px;
+
+2 | Playfair Display Black font-size: 60px
+
+3 | Playfair Display Black font-size: 36px;
+
+4 | Roboto Regular font-size: 21px;
+
+maximum width of a container is 1128px
+
+in the very first section try setting a min-height  of 660px 
+and using what we've covered in flexbox to center the content vertically
+
+colors:
+
+cream
+#F3EED9
+
+dark-grey
+#222C2A
+
+brown
+#824936
+
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3125rem;
+  color: #222c2a;
+  line-height: 1.1;
+}
+
+/* max-width 100% will shrink if theres not enough room but it wont stretch them if not*/
+img {
+  max-width: 100%;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 900;
+}
+
+/* .intro css rules */
+.intro {
+  background: ;
+  padding: ;
+  text-align: center;
+  color: ;
+}
+
+.intro__text {
+  text-transform: ;
+  letter-spacing: ;
+  font-size: ;
+}
