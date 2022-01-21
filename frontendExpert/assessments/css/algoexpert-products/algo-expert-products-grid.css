@@ -1,31 +1,47 @@
-/*  Write your code here. */
+#wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  background-color: black;
+}
 
 #algo-expert {
-  /*  Write your code here. */
+  grid-column: 1/3;
   background-color: #626ee3;
 }
 
 #systems-expert {
-  /*  Write your code here. */
+  grid-row: 1;
+  grid-column: 1/3;
   background-color: #890023;
 }
 
 #ml-expert {
-  /*  Write your code here. */
+  grid-row: 1;
+  grid-column: 2/4;
   background-color: #f37f1b;
 }
 
 #frontend-expert {
-  /*  Write your code here. */
+  grid-row: 3;
   background-color: #11967e;
 }
 
 #programming-expert {
-  /*  Write your code here. */
+  grid-row: 3;
   background-color: #f21b3f;
 }
 
-.product {
+/* .product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  color: white;
+  font-weight: bold;
+} */
+
+.product:nth-child(1) {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,3 +49,52 @@
   color: white;
   font-weight: bold;
 }
+
+.product:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  color: white;
+  font-weight: bold;
+}
+
+.product:nth-child(3) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  color: white;
+  font-weight: bold;
+}
+
+.product:nth-child(4) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  color: white;
+  font-weight: bold;
+}
+
+.product:nth-child(5) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  color: white;
+  font-weight: bold;
+}
+
+/* grid-area: "algo-expert";
+grid-area: "systems-expert";
+grid-area: "ml-expert";
+grid-area: "frontend-expert";
+grid-area: "programming-expert";
+
+
+
+grid-template-areas: 
+"systems-expert ml-expert"
+"algo-expert"
+"frontend-expert programming-expert"; */

@@ -1,0 +1,64 @@
+/* 
+#ff0000 red
+#ffa500 orange
+#ffff00 yellow  
+#008000 green
+#0000ff blue
+#800080 */
+
+#div-1 {
+  --circle-thickness: 25px;
+  --purple-size: calc(var(--circle-thickness) * 2);
+  --offset: calc(var(--circle-thickness) * 5);
+
+  position: relative;
+  top: var(--offset);
+  left: var(--offset);
+  border-radius: 50%;
+  background-color: #800080;
+  height: var( --purple-size);
+  width: var( --purple-size);
+  box-shadow: 0 0 0  var(--circle-thickness) #0000ff,
+  0 0 0 calc(var(--circle-thickness) * 2) #008000,
+  0 0 0 calc(var(--circle-thickness) * 3) #ffff00,
+  0 0 0 calc(var(--circle-thickness) * 4) #ffa500,
+  0 0 0 calc(var(--circle-thickness) * 5) #ff0000;
+}
+/* 
+:root {
+  --circle-thickness: 25px;
+}
+
+
+div {
+  border-radius: 50%;
+}
+
+#div-1 {
+
+  --purple-size: calc(var(--circle-thickness) * 2);
+
+  background-color: #800080;
+  height: var( --purple-size);
+  width: var( --purple-size);
+  border: var(--circle-thickness) solid #0000ff;
+}
+
+#div-2 {
+  --green-size: calc(var(--circle-thickness) * 4);
+  background-color: green;
+  width: var(--green-size);
+  height: var(--green-size);
+  padding: var(--circle-thickness);
+  border: var(--circle-thickness) solid yellow;
+}
+
+#div-3 {
+
+  --orange-size: calc(var(--circle-thickness) * 8);
+  background-color: orange;
+  width: var(--orange-size);
+  height: var(--orange-size);
+  border: var(--circle-thickness) solid red;
+  padding: var(--circle-thickness);
+} */
