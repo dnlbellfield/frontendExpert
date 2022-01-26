@@ -69,11 +69,6 @@ h1 {
   margin-left: 30px;
 }
 
-header {
-  background: #136c72;
-  padding: 0.5em 0;
-}
-
 .logo {
   /* display: flex; */
   /* border: 2px solid green; */
@@ -81,8 +76,22 @@ header {
   padding-top: 0.5rem;
 }
 
+header {
+  background: #136c72;
+  padding: 0.5em 0;
+  border: 3px solid green;
+}
+
+.nav {
+  border: 2px solid yellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
 .nav__list {
-  /* border: 3px solid red; */
+  border: 3px solid red;
   display: flex;
   margin: 0;
   padding: 0;
@@ -94,15 +103,6 @@ header {
 }
 
 .nav__list--secondary {
-}
-
-.nav {
-  /* border: 2px solid yellow; */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-grow: 1;
-  flex-shrink: 1;
 }
 
 .nav__item + .nav__item {

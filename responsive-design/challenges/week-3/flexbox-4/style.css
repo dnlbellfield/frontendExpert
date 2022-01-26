@@ -1,0 +1,152 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.1;
+  color: #222c2a;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 900;
+}
+
+img {
+  max-width: 100%;
+}
+
+.intro {
+  /* text-align: center;
+  background: #f3eed9;
+  padding: 200px 0;
+  color: #824936; */
+
+  background: #f3eed9;
+  text-align: center;
+  color: #824936;
+  min-height: 660px;
+
+  display: flex;
+  align-items: center;
+}
+
+.intro__title {
+  color: #824936;
+  font-size: 40px;
+}
+
+.intro__text {
+  font-weight: 200;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin: 0 0 0.25em;
+  color: #222c2a;
+}
+
+.section-2 {
+  background: white;
+  min-height: 400px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 1128px;
+  /* border: 2px solid green; */
+}
+
+.section-title {
+  /* text-align: center; */
+
+  font-size: 36px;
+  margin: 2rem auto;
+}
+
+.section-title--2 {
+  /* text-align: center; */
+  margin: 2rem auto;
+  color: #824936;
+}
+
+.row {
+  /* display: flex; */
+}
+
+.col {
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.section-3 {
+  /* text-align: center; */
+
+  background: #222c2a;
+  min-height: 400px;
+  /* display: flex;
+  justify-self: center;
+  align-items: center; */
+}
+
+.section-title--3 {
+  color: white;
+}
+
+.section-3__text {
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: white;
+  /* border: 2px solid green; */
+  width: 100%;
+}
+
+.img {
+  width: 100%;
+  /* border: 2px solid green; */
+}
+
+.section-4 {
+  /* text-align: center; */
+  background: #824936;
+  min-height: 400px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  color: white;
+}
+
+section {
+  padding: 4em 0;
+}
+
+/* larger screen sizes, 600px and up*/
+@media (min-width: 800px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .col + .col {
+    margin-left: 4em;
+  }
+
+  .intro__title {
+    font-size: 60px;
+  }
+}

@@ -1,0 +1,5 @@
+this design has 4 sections
+
+create 4 section's <section>
+
+  font-family: 'Playfair Display', serif;
